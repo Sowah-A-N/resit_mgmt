@@ -1,0 +1,104 @@
+/* General styling for the login page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #3b8d99, #6e7dff); /* Gradient background */
+    margin: 0;
+}
+
+.login-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+form input:focus {
+    border: 1px solid #4CAF50; /* Green border on focus */
+    outline: none;
+}
+
+form button {
+    background-color: #055174;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;    
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #006F8E; /* Darker shade on hover */
+}
+
+form button:active {
+    background-color: #004a5d; /* Darker shade when clicked */
+}
+
+/* Error message styling */
+#error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    form input, form button {
+        font-size: 14px;
+    }
+}

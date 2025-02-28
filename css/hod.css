@@ -1,0 +1,139 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 150px;
+    background-color: #055174;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #033f59;
+    border-radius: 4px;
+}
+
+/* Main content styling */
+.content {
+    margin-left: 150px; /* Align content next to the sidebar */
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: calc(100vh - 40px); /* Full height minus padding */
+    padding: 20px;
+    background-color: #f4f4f4; /* Ensure a uniform background */
+}
+
+/* Dashboard container adjustments */
+.dashboard-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; /* Allow the container to adjust to screen size */
+    max-width: 800px; /* Optional: Set a max width for better aesthetics */
+}
+
+
+.dashboard-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.dashboard-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Student entry styles */
+.student-entry {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-entry p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.student-entry button {
+    background-color: #055174;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.student-entry button:hover {
+    background-color: #033f59;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .content {
+        margin-left: 150px;
+    }
+
+    .student-entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .student-entry button {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,139 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e9f1f7;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 220px;
+    background-color: #055174;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    background-color: #033f59;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+.content {
+    margin-left: 240px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 450px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #055174;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form input:focus {
+    border-color: #055174;
+    outline: none;
+    box-shadow: 0 0 5px rgba(5, 81, 116, 0.5);
+}
+
+/* Submit Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #055174;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #033f59;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .content {
+        margin-left: 190px;
+        padding: 20px;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #3b8d99, #6e7dff);
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 80%;
+    box-shadow: 0 4px 20px rgba(212, 202, 202, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Form Header */
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.title-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.form-header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Left Section */
+.image-section {
+    flex: 1;
+    background-color: #F4F4F4;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    animation: none;
+    transition: transform 0.3s ease;
+}
+
+.image-section:hover img {
+    animation: dance 1s infinite ease-in-out;
+}
+
+@keyframes dance {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        transform: translate(-10px, 5px) rotate(-5deg);
+    }
+    40% {
+        transform: translate(10px, -5px) rotate(5deg);
+    }
+    60% {
+        transform: translate(-5px, 10px) rotate(-3deg);
+    }
+    80% {
+        transform: translate(5px, -10px) rotate(3deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+/* Right Section */
+.form-section {
+    flex: 1;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-header .logo {
+    font-size: 2.5em;
+    color: #4169E1; /* Royal Blue */
+    margin-bottom: 10px;
+}
+
+.form-header h1 {
+    font-size: 1.5em;
+    color: #333333;
+}
+
+/* Form */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #E0E0E0; /* Light gray border */
+    border-radius: 5px;
+    background-color: #FFFFFF; /* White fill */
+}
+
+.input-group input:focus {
+    border-color: #4169E1; /* Royal Blue border on focus */
+    outline: none;
+}
+
+/* Button */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #4169E1; /* Royal Blue */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #3657A6; /* Slightly darker royal blue */
+}
+
+/* Forgot Password */
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #4169E1; /* Royal Blue */
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #666666;
+}
+
+footer p {
+    margin: 0;
+}
